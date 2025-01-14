@@ -7,10 +7,10 @@ import Navbar from "../components/NavbarComponent";
 
 export default function RecipesPage() {
   const [recipeIdeas, setRecipeIdeas] = useState<Recipe[]>(
-    recipes.recipes || []
+    recipes || []
   );
   const [filteredRecipes, setFilteredRecipes] = useState<Recipe[]>(
-    recipes.recipes || []
+    recipes || []
   );
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [showForm, setShowForm] = useState<boolean>(false);
